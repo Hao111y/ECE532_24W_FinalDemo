@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1712021951">
+  <File Type="PA-TCL" Name="graphics_rendering_v2_0.tcl"/>
+  <File Type="REPORTS-TCL" Name="graphics_rendering_v2_0_reports.tcl"/>
+  <File Type="RDS-RDS" Name="graphics_rendering_v2_0.vds"/>
+  <File Type="RDS-UTIL" Name="graphics_rendering_v2_0_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="graphics_rendering_v2_0_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="graphics_rendering_v2_0.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../../../../../../../../Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../../Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering_v2_0.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../../Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering_v2_0_M00_AXI.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../../Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering_v2_0_S00_AXI.v">
+      <FileInfo>
+        <Attr Name="Library" Val=""/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../../Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="graphics_rendering_v2_0"/>
+      <Option Name="TopRTLFile" Val="$PPRDIR/../../../../../../../../../Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering_v2_0.v"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Tue Apr  2 12:38:30 2024
+# Process ID: 11188
+# Current directory: C:/Users/akbarmu6/ip_repo/grahpics_rendering_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9308 C:\Users\akbarmu6\ip_repo\grahpics_rendering_2\edit_graphics_rendering_v2_0.xpr
+# Log file: C:/Users/akbarmu6/ip_repo/grahpics_rendering_2/vivado.log
+# Journal file: C:/Users/akbarmu6/ip_repo/grahpics_rendering_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/akbarmu6/ip_repo/grahpics_rendering_2/edit_graphics_rendering_v2_0.xpr
+update_compile_order -fileset sources_1
+set_property source_mgmt_mode DisplayOnly [current_project]
+update_files -from_files C:/Users/akbarmu6/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering_v2_0.v -to_files C:/../../../../../Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering_v2_0.v -filesets [get_filesets *]
+update_files -from_files C:/Users/akbarmu6/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering.sv -to_files C:/../../../../../Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering.sv -filesets [get_filesets *]
+update_files -from_files C:/Users/akbarmu6/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/component.xml -to_files C:/../../../../../Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/component.xml -filesets [get_filesets *]
+ipx::open_ipxact_file {C:\Users\akbarmu6\ip_repo\grahpics_rendering_2\graphics_rendering_2.0\component.xml}
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+update_files -from_files C:/Users/akbarmu6/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering_v2_0_M00_AXI.v -to_files C:/../../../../../Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering_v2_0_M00_AXI.v -filesets [get_filesets *]
+update_files -from_files C:/Users/akbarmu6/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering_v2_0_S00_AXI.v -to_files C:/../../../../../Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering_v2_0_S00_AXI.v -filesets [get_filesets *]
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 12 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  {c:/Users/akbarmu6/ip_repo/grahpics_rendering_2/graphics_rendering_2.0 c:/Users/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0 c:/Users/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering/graphics_rendering_1.0 c:/Users/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/graphics_rendering/graphics_rendering_1.0 c:/Users/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0 c:/Users/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/bram_2_ddr_stream_1.0 c:/Users/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram_vga_stream_1.0 c:/Users/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/axi_lite_test_1.0 c:/Users/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/sequential_read_axi_lite_master_2.0 c:/Users/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/sequential_read_axi_lite_master_1.0} [current_project]
+update_ip_catalog
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes ports [ipx::current_core]
+set_property core_revision 13 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/akbarmu6/ip_repo/grahpics_rendering_2/graphics_rendering_2.0
+ipx::merge_project_changes ports [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 14 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/akbarmu6/ip_repo/grahpics_rendering_2/graphics_rendering_2.0

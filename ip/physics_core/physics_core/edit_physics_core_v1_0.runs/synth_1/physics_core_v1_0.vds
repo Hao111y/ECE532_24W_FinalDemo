@@ -1,0 +1,460 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Mar 20 23:08:04 2024
+# Process ID: 16848
+# Current directory: c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/edit_physics_core_v1_0.runs/synth_1
+# Command line: vivado.exe -log physics_core_v1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source physics_core_v1_0.tcl
+# Log file: c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/edit_physics_core_v1_0.runs/synth_1/physics_core_v1_0.vds
+# Journal file: c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/edit_physics_core_v1_0.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source physics_core_v1_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/bram_2_ddr_stream_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram_vga_stream_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/axi_lite_test_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/sequential_read_axi_lite_master_2.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/sequential_read_axi_lite_master_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/users/jazim/school/ece532/project/vivado/custom_ip/ip_repo/edit_physics_core_v1_0.cache/ip 
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0.v:]
+Command: synth_design -top physics_core_v1_0 -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 30928 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 391.898 ; gain = 102.398
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'physics_core_v1_0' [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'physics_core_v1_0_S00_AXI' [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:3]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter SCALE bound to: 32'sb00000000000000000000000100000000 
+	Parameter TABLE_dX bound to: 32'sb00000000000000101111101000000000 
+	Parameter TABLE_dY bound to: 32'sb00000000000001010101101000000000 
+	Parameter TABLE_dZ bound to: 32'sb00000000000000000000111100000000 
+	Parameter NET_dX bound to: 32'sb00000000000000101111101000000000 
+	Parameter NET_dY bound to: 32'sb00000000000000000000101000000000 
+	Parameter NET_dZ bound to: 32'sb00000000000000000001111000000000 
+	Parameter PADDLE_dX bound to: 32'sb00000000000000000011110000000000 
+	Parameter PADDLE_dY bound to: 32'sb00000000000000000000101000000000 
+	Parameter PADDLE_dZ bound to: 32'sb00000000000000000100011000000000 
+	Parameter BALL_RADIUS bound to: 24'sb000000000001010000000000 
+	Parameter TABLE_X bound to: 32'sb00000000000000000000000000000000 
+	Parameter TABLE_Y bound to: 32'sb00000000000001010101101000000000 
+	Parameter TABLE_Z bound to: 32'sb00000000000000101110010000000000 
+	Parameter NET_X bound to: 32'sb00000000000000101111101000000000 
+	Parameter NET_Y bound to: 32'sb00000000000001010101101000000000 
+	Parameter NET_Z bound to: 32'sb00000000000000000000111100000000 
+	Parameter PADDLE1_X bound to: 32'sb00000000000000000000000000000000 
+	Parameter PADDLE1_Y bound to: 32'sb00000000000000000000000000000000 
+	Parameter PADDLE1_Z bound to: 32'sb00000000000000110001011000000000 
+	Parameter PADDLE2_X bound to: 32'sb00000000000000000000000000000000 
+	Parameter PADDLE2_Y bound to: 32'sb00000000000010101011010000000000 
+	Parameter PADDLE2_Z bound to: 32'sb00000000000000110001011000000000 
+	Parameter BALL_X bound to: 32'sb00000000000000000000000000000000 
+	Parameter BALL_Y bound to: 32'sb00000000000001010101101000000000 
+	Parameter BALL_Z bound to: 32'sb00000000000000110100100000000000 
+	Parameter BALL_VEL_X bound to: 24'sb000000000000000000000100 
+	Parameter BALL_VEL_Y bound to: 24'sb111111111111111100110011 
+	Parameter BALL_VEL_Z bound to: 24'sb000000000000000000000000 
+	Parameter Gravity bound to: 32'sb11111111111111111111111111111111 
+	Parameter Loss bound to: 32'sb00000000000000000000000000000001 
+	Parameter BOUNDS_X1 bound to: 32'sb11111111111111000001100000000000 
+	Parameter BOUNDS_X2 bound to: 32'sb00000000000000111110100000000000 
+	Parameter BOUNDS_Y1 bound to: 32'sb11111111111111000001100000000000 
+	Parameter BOUNDS_Y2 bound to: 32'sb00000000000011111010000000000000 
+	Parameter BOUNDS_Z1 bound to: 32'sb00000000000000000000000000000000 
+	Parameter BOUNDS_Z2 bound to: 32'sb00000000000001001011000000000000 
+	Parameter UPDATE_COUNT_PER_FRAME bound to: 5 - type: integer 
+	Parameter CYCLES_PER_FRAME bound to: 1666666 - type: integer 
+	Parameter DELAY_TIME bound to: 333333 - type: integer 
+	Parameter IDLE bound to: 4'b0000 
+	Parameter START bound to: 4'b0001 
+	Parameter NEW_BALL_POSITION bound to: 4'b0010 
+	Parameter BALL_COLLISION bound to: 4'b0011 
+	Parameter PADDLE_1_COLLISION bound to: 4'b0100 
+	Parameter PADDLE_2_COLLISION bound to: 4'b0101 
+	Parameter TABLE_COLLISION bound to: 4'b0110 
+	Parameter NET_COLLISION bound to: 4'b0111 
+	Parameter UPDATE_BALL_POS bound to: 4'b1000 
+WARNING: [Synth 8-151] case item 6'b000100 is unreachable [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:621]
+WARNING: [Synth 8-151] case item 6'b000101 is unreachable [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:622]
+WARNING: [Synth 8-151] case item 6'b000110 is unreachable [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:623]
+WARNING: [Synth 8-151] case item 6'b000111 is unreachable [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:624]
+INFO: [Synth 8-226] default block is never used [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:616]
+WARNING: [Synth 8-151] case item 6'b000100 is unreachable [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:702]
+WARNING: [Synth 8-151] case item 6'b000101 is unreachable [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:703]
+WARNING: [Synth 8-151] case item 6'b000110 is unreachable [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:704]
+WARNING: [Synth 8-151] case item 6'b000111 is unreachable [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:705]
+WARNING: [Synth 8-151] case item 6'b001000 is unreachable [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:706]
+WARNING: [Synth 8-151] case item 6'b001001 is unreachable [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:707]
+WARNING: [Synth 8-151] case item 6'b001010 is unreachable [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:708]
+WARNING: [Synth 8-151] case item 6'b001011 is unreachable [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:709]
+WARNING: [Synth 8-151] case item 6'b001100 is unreachable [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:710]
+WARNING: [Synth 8-151] case item 6'b001101 is unreachable [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:711]
+WARNING: [Synth 8-151] case item 6'b001110 is unreachable [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:712]
+WARNING: [Synth 8-151] case item 6'b001111 is unreachable [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:713]
+WARNING: [Synth 8-151] case item 6'b010000 is unreachable [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:714]
+WARNING: [Synth 8-151] case item 6'b010001 is unreachable [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:715]
+WARNING: [Synth 8-151] case item 6'b010010 is unreachable [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:716]
+WARNING: [Synth 8-151] case item 6'b010011 is unreachable [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:717]
+WARNING: [Synth 8-151] case item 6'b010100 is unreachable [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:718]
+WARNING: [Synth 8-151] case item 6'b010101 is unreachable [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:719]
+WARNING: [Synth 8-151] case item 6'b010110 is unreachable [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:720]
+WARNING: [Synth 8-151] case item 6'b010111 is unreachable [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:721]
+WARNING: [Synth 8-151] case item 6'b011000 is unreachable [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:722]
+WARNING: [Synth 8-151] case item 6'b011001 is unreachable [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:723]
+WARNING: [Synth 8-151] case item 6'b011010 is unreachable [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:724]
+WARNING: [Synth 8-151] case item 6'b011011 is unreachable [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:725]
+INFO: [Synth 8-226] default block is never used [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:697]
+WARNING: [Synth 8-6014] Unused sequential element ball_Z_reset_reg was removed.  [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:608]
+WARNING: [Synth 8-6014] Unused sequential element ball_velocity_X_reset_reg was removed.  [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:610]
+WARNING: [Synth 8-6014] Unused sequential element ball_velocity_Y_reset_reg was removed.  [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:611]
+WARNING: [Synth 8-6014] Unused sequential element ball_velocity_Z_reset_reg was removed.  [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:612]
+INFO: [Synth 8-6155] done synthesizing module 'physics_core_v1_0_S00_AXI' (1#1) [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0_S00_AXI.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'physics_core_v1_0' (2#1) [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0/hdl/physics_core_v1_0.v:4]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_X[23]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_X[22]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_X[21]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_X[20]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_X[19]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_X[18]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_X[17]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_X[16]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_X[15]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_X[14]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_X[13]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_X[12]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_X[11]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_X[10]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_X[9]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_X[8]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_X[7]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_X[6]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_X[5]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_X[4]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_X[3]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_X[2]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_X[1]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_X[0]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Y[23]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Y[22]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Y[21]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Y[20]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Y[19]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Y[18]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Y[17]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Y[16]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Y[15]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Y[14]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Y[13]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Y[12]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Y[11]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Y[10]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Y[9]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Y[8]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Y[7]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Y[6]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Y[5]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Y[4]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Y[3]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Y[2]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Y[1]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Y[0]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Z[23]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Z[22]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Z[21]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Z[20]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Z[19]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Z[18]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Z[17]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Z[16]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Z[15]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Z[14]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Z[13]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Z[12]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Z[11]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Z[10]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Z[9]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Z[8]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Z[7]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Z[6]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Z[5]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Z[4]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Z[3]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Z[2]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Z[1]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_Z[0]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_1_valid
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_2_X[23]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_2_X[22]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_2_X[21]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_2_X[20]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_2_X[19]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_2_X[18]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_2_X[17]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_2_X[16]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_2_X[15]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_2_X[14]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_2_X[13]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_2_X[12]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_2_X[11]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_2_X[10]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_2_X[9]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_2_X[8]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_2_X[7]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_2_X[6]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_2_X[5]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_2_X[4]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_2_X[3]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_2_X[2]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_2_X[1]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_2_X[0]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_2_Y[23]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_2_Y[22]
+WARNING: [Synth 8-3331] design physics_core_v1_0_S00_AXI has unconnected port ip_pc_paddle_2_Y[21]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 447.734 ; gain = 158.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 447.734 ; gain = 158.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 447.734 ; gain = 158.234
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 447.734 ; gain = 158.234
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module physics_core_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design physics_core_v1_0 has port s00_axi_rdata[31] driven by constant 0
+WARNING: [Synth 8-3917] design physics_core_v1_0 has port s00_axi_rdata[30] driven by constant 0
+WARNING: [Synth 8-3917] design physics_core_v1_0 has port s00_axi_rdata[29] driven by constant 0
+WARNING: [Synth 8-3917] design physics_core_v1_0 has port s00_axi_rdata[28] driven by constant 0
+WARNING: [Synth 8-3917] design physics_core_v1_0 has port s00_axi_rdata[27] driven by constant 0
+WARNING: [Synth 8-3917] design physics_core_v1_0 has port s00_axi_rdata[26] driven by constant 0
+WARNING: [Synth 8-3917] design physics_core_v1_0 has port s00_axi_rdata[25] driven by constant 0
+WARNING: [Synth 8-3917] design physics_core_v1_0 has port s00_axi_rdata[24] driven by constant 0
+INFO: [Synth 8-3886] merging instance 'physics_core_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'physics_core_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\physics_core_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'physics_core_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'physics_core_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\physics_core_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 594.699 ; gain = 305.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 594.699 ; gain = 305.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 594.699 ; gain = 305.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 594.699 ; gain = 305.199
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 594.699 ; gain = 305.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 594.699 ; gain = 305.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 594.699 ; gain = 305.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 594.699 ; gain = 305.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 594.699 ; gain = 305.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     1|
+|3     |LUT2 |     1|
+|4     |LUT3 |     2|
+|5     |LUT4 |    24|
+|6     |LUT6 |     6|
+|7     |FDRE |    58|
+|8     |FDSE |     1|
+|9     |IBUF |    35|
+|10    |OBUF |    41|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------------------------------+--------------------------+------+
+|      |Instance                         |Module                    |Cells |
++------+---------------------------------+--------------------------+------+
+|1     |top                              |                          |   170|
+|2     |  physics_core_v1_0_S00_AXI_inst |physics_core_v1_0_S00_AXI |    93|
++------+---------------------------------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 594.699 ; gain = 305.199
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 368 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 594.699 ; gain = 305.199
+Synthesis Optimization Complete : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 594.699 ; gain = 305.199
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 703.621 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 143 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 703.621 ; gain = 426.371
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 703.621 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/edit_physics_core_v1_0.runs/synth_1/physics_core_v1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file physics_core_v1_0_utilization_synth.rpt -pb physics_core_v1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 20 23:08:14 2024...

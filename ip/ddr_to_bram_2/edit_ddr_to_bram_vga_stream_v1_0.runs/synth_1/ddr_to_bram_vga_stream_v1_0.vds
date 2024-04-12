@@ -1,0 +1,596 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Apr  1 21:25:36 2024
+# Process ID: 29456
+# Current directory: C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/edit_ddr_to_bram_vga_stream_v1_0.runs/synth_1
+# Command line: vivado.exe -log ddr_to_bram_vga_stream_v1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ddr_to_bram_vga_stream_v1_0.tcl
+# Log file: C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/edit_ddr_to_bram_vga_stream_v1_0.runs/synth_1/ddr_to_bram_vga_stream_v1_0.vds
+# Journal file: C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/edit_ddr_to_bram_vga_stream_v1_0.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ddr_to_bram_vga_stream_v1_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/axi_lite_test_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/sequential_read_axi_lite_master_2.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/sequential_read_axi_lite_master_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/edit_ddr_to_bram_vga_stream_v1_0.cache/ip 
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0_M00_AXI.v:]
+Command: synth_design -top ddr_to_bram_vga_stream_v1_0 -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 37848 
+WARNING: [Synth 8-2611] redeclaration of ansi port burst_count_total is not allowed [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0_M00_AXI.v:221]
+WARNING: [Synth 8-2611] redeclaration of ansi port start_single_burst is not allowed [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0_M00_AXI.v:224]
+WARNING: [Synth 8-2611] redeclaration of ansi port burst_complete is not allowed [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0_M00_AXI.v:225]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 403.785 ; gain = 114.594
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ddr_to_bram_vga_stream_v1_0' [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0.v:4]
+	Parameter C_M00_AXI_TARGET_SLAVE_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter C_M00_AXI_BURST_LEN bound to: 16 - type: integer 
+	Parameter C_M00_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M00_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M00_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M00_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M00_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M01_AXI_TARGET_SLAVE_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter C_M01_AXI_BURST_LEN bound to: 16 - type: integer 
+	Parameter C_M01_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M01_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M01_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M01_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M01_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M01_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M01_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M01_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+	Parameter FRAME_BUFFER_COUNT bound to: 2 - type: integer 
+	Parameter LINE_COUNT bound to: 2 - type: integer 
+	Parameter PIXEL_WIDTH bound to: 640 - type: integer 
+	Parameter PIXEL_HEIGHT bound to: 480 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ddr_to_bram_vga_stream_v1_0_M00_AXI_2' [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0_M00_AXI.v:3]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0_M00_AXI.v:166]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0_M00_AXI.v:166]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0_M00_AXI.v:166]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0_M00_AXI.v:166]
+	Parameter C_M_TARGET_SLAVE_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter C_M2_TARGET_SLAVE_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter C_M_AXI_BURST_LEN bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+	Parameter FRAME_BUFFER_COUNT bound to: 2 - type: integer 
+	Parameter LINE_COUNT bound to: 2 - type: integer 
+	Parameter PIXEL_COUNT bound to: 640 - type: integer 
+	Parameter PIXEL_HEIGHT bound to: 480 - type: integer 
+	Parameter C_TRANSACTIONS_NUM bound to: 4 - type: integer 
+	Parameter PIXEL_COUNT_POW bound to: 10 - type: integer 
+	Parameter LINE_COUNT_POW bound to: 1 - type: integer 
+	Parameter PIXEL_HEIGHT_POW bound to: 9 - type: integer 
+	Parameter FRAME_BUFFER_COUNT_POW bound to: 1 - type: integer 
+	Parameter BURST_COUNT bound to: 2 - type: integer 
+	Parameter BURST_COUNT_TOTAL bound to: 960 - type: integer 
+	Parameter C_NO_BURSTS_REQ bound to: 10 - type: integer 
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0_M00_AXI.v:166]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0_M00_AXI.v:166]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0_M00_AXI.v:166]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0_M00_AXI.v:166]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0_M00_AXI.v:166]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0_M00_AXI.v:166]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0_M00_AXI.v:166]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0_M00_AXI.v:166]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0_M00_AXI.v:166]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0_M00_AXI.v:166]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0_M00_AXI.v:166]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0_M00_AXI.v:166]
+WARNING: [Synth 8-6014] Unused sequential element read_index_reg was removed.  [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0_M00_AXI.v:481]
+WARNING: [Synth 8-3848] Net M_AXI_BID in module/entity ddr_to_bram_vga_stream_v1_0_M00_AXI_2 does not have driver. [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0_M00_AXI.v:71]
+WARNING: [Synth 8-3848] Net M2_AXI_BID in module/entity ddr_to_bram_vga_stream_v1_0_M00_AXI_2 does not have driver. [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0_M00_AXI.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'ddr_to_bram_vga_stream_v1_0_M00_AXI_2' (1#1) [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0_M00_AXI.v:3]
+WARNING: [Synth 8-6104] Input port 'm00_axi_bid' has an internal driver [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0.v:194]
+WARNING: [Synth 8-6104] Input port 'm01_axi_bid' has an internal driver [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0.v:240]
+INFO: [Synth 8-6155] done synthesizing module 'ddr_to_bram_vga_stream_v1_0' (2#1) [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0.v:4]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M_AXI_BID[0]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_BID[0]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M_AXI_AWREADY
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M_AXI_WREADY
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M_AXI_BRESP[1]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M_AXI_BRESP[0]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M_AXI_BUSER[-1]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M_AXI_BUSER[0]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M_AXI_BVALID
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M_AXI_RID[0]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M_AXI_RDATA[31]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M_AXI_RDATA[30]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M_AXI_RDATA[29]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M_AXI_RDATA[28]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M_AXI_RDATA[27]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M_AXI_RDATA[26]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M_AXI_RDATA[25]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M_AXI_RDATA[24]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M_AXI_RDATA[23]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M_AXI_RDATA[22]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M_AXI_RDATA[21]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M_AXI_RDATA[20]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M_AXI_RDATA[19]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M_AXI_RDATA[18]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M_AXI_RDATA[17]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M_AXI_RDATA[16]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M_AXI_RRESP[1]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M_AXI_RRESP[0]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M_AXI_RUSER[-1]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M_AXI_RUSER[0]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_ACLK
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_ARESETN
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_BRESP[1]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_BRESP[0]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_BUSER[-1]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_BUSER[0]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_ARREADY
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RID[0]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[31]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[30]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[29]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[28]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[27]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[26]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[25]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[24]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[23]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[22]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[21]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[20]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[19]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[18]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[17]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[16]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[15]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[14]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[13]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[12]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[11]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[10]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[9]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[8]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[7]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[6]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[5]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[4]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[3]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[2]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[1]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RDATA[0]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RRESP[1]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RRESP[0]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RLAST
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RUSER[-1]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RUSER[0]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M2_AXI_RVALID
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 438.781 ; gain = 149.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 438.781 ; gain = 149.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 438.781 ; gain = 149.590
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'axi_wlast_reg' into 'axi_wvalid_reg' [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0_M00_AXI.v:273]
+INFO: [Synth 8-4471] merging register 'm2_axi_rready_reg' into 'axi_wvalid_reg' [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0_M00_AXI.v:341]
+INFO: [Synth 8-4471] merging register 'm2_axi_arvalid_reg' into 'axi_awvalid_reg' [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0/hdl/ddr_to_bram_vga_stream_v1_0_M00_AXI.v:339]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 438.781 ; gain = 149.590
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 19    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ddr_to_bram_vga_stream_v1_0_M00_AXI_2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 19    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awid[0] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[31] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[30] driven by constant 1
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[29] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[28] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[27] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[26] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[25] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[24] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[23] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[22] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[21] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[20] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[19] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[18] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[17] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[16] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[15] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[14] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[13] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[12] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[11] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[10] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[9] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[8] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[7] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[6] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[5] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[4] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[3] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[2] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[1] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awaddr[0] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awlen[7] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awlen[6] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awlen[5] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awlen[4] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awlen[3] driven by constant 1
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awlen[2] driven by constant 1
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awlen[1] driven by constant 1
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awlen[0] driven by constant 1
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awsize[2] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awsize[1] driven by constant 1
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awsize[0] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awburst[1] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awburst[0] driven by constant 1
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awlock driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awcache[3] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awcache[2] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awcache[1] driven by constant 1
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awcache[0] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awprot[2] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awprot[1] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awprot[0] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awqos[3] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awqos[2] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awqos[1] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awqos[0] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awuser[-1] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awuser[0] driven by constant 1
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_wstrb[3] driven by constant 1
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_wstrb[2] driven by constant 1
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_wstrb[1] driven by constant 1
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_wstrb[0] driven by constant 1
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_wuser[-1] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_wuser[0] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_arid[0] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_araddr[31] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_araddr[30] driven by constant 1
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_araddr[29] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_araddr[28] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_araddr[27] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_araddr[26] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_araddr[25] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_araddr[24] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_araddr[23] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_araddr[22] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_araddr[21] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_araddr[20] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_araddr[19] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_araddr[9] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_araddr[8] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_araddr[7] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_araddr[6] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_araddr[5] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_araddr[4] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_araddr[3] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_araddr[2] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_araddr[1] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_araddr[0] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_arlen[7] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_arlen[6] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_arlen[5] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_arlen[4] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_arlen[3] driven by constant 1
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_arlen[2] driven by constant 1
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_arlen[1] driven by constant 1
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_arlen[0] driven by constant 1
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_arsize[2] driven by constant 0
+WARNING: [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_arsize[1] driven by constant 1
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0 has unconnected port m00_axi_awready
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0 has unconnected port m00_axi_wready
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0 has unconnected port m00_axi_bid[0]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0 has unconnected port m00_axi_bresp[1]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0 has unconnected port m00_axi_bresp[0]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0 has unconnected port m00_axi_buser[-1]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0 has unconnected port m00_axi_buser[0]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0 has unconnected port m00_axi_bvalid
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0 has unconnected port m00_axi_rid[0]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0 has unconnected port m00_axi_rdata[31]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0 has unconnected port m00_axi_rdata[30]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0 has unconnected port m00_axi_rdata[29]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0 has unconnected port m00_axi_rdata[28]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0 has unconnected port m00_axi_rdata[27]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0 has unconnected port m00_axi_rdata[26]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0 has unconnected port m00_axi_rdata[25]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0 has unconnected port m00_axi_rdata[24]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0 has unconnected port m00_axi_rdata[23]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0 has unconnected port m00_axi_rdata[22]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0 has unconnected port m00_axi_rdata[21]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0 has unconnected port m00_axi_rdata[20]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0 has unconnected port m00_axi_rdata[19]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0 has unconnected port m00_axi_rdata[18]
+WARNING: [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0 has unconnected port m00_axi_rdata[17]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/burst_complete_reg )
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[0]' (FDE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[16]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[1]' (FDE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[17]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[2]' (FDE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[18]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[3]' (FDE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[19]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[4]' (FDE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[20]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[5]' (FDE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[21]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[6]' (FDE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[22]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[7]' (FDE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[23]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[8]' (FDE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[24]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[9]' (FDE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[25]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[10]' (FDE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[26]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[11]' (FDE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[27]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[12]' (FDE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[28]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[13]' (FDE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[14]' (FDE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[15]' (FDE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/m2_axi_wdata_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_bready_reg )
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wvalid_reg' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[0]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[1]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[2]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[3]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[4]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[5]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[5]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[6]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[6]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[7]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[8]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[8]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[9]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[9]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[10]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[10]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[11]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[11]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[12]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[12]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[13]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[13]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[14]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[14]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[15]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[15]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[16]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[16]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[17]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[17]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[18]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[18]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[19]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[19]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[20]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[20]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[21]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[21]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[22]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[22]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[23]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[23]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[24]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[24]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[25]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[25]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[26]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[26]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[27]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[27]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[28]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[28]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[29]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[30]' (FDRE) to 'ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_wdata_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/axi_awvalid_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/burst_count_total_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/burst_count_total_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/burst_count_total_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/burst_count_total_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/burst_count_total_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/burst_count_total_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/burst_count_total_reg[5] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 594.789 ; gain = 305.598
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 594.789 ; gain = 305.598
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 594.793 ; gain = 305.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 594.793 ; gain = 305.602
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 594.793 ; gain = 305.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 594.793 ; gain = 305.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 594.793 ; gain = 305.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 594.793 ; gain = 305.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 594.793 ; gain = 305.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     1|
+|3     |LUT2 |     1|
+|4     |LUT3 |     2|
+|5     |LUT4 |     3|
+|6     |LUT5 |     2|
+|7     |LUT6 |     1|
+|8     |FDRE |    31|
+|9     |IBUF |    26|
+|10    |OBUF |   343|
++------+-----+------+
+
+Report Instance Areas: 
++------+-------------------------------------------+--------------------------------------+------+
+|      |Instance                                   |Module                                |Cells |
++------+-------------------------------------------+--------------------------------------+------+
+|1     |top                                        |                                      |   411|
+|2     |  ddr_to_bram_vga_stream_v1_0_M00_AXI_inst |ddr_to_bram_vga_stream_v1_0_M00_AXI_2 |    41|
++------+-------------------------------------------+--------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 594.793 ; gain = 305.602
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 417 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 594.793 ; gain = 305.602
+Synthesis Optimization Complete : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 594.793 ; gain = 305.602
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 702.625 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+78 Infos, 230 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 702.625 ; gain = 425.301
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 702.625 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/edit_ddr_to_bram_vga_stream_v1_0.runs/synth_1/ddr_to_bram_vga_stream_v1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ddr_to_bram_vga_stream_v1_0_utilization_synth.rpt -pb ddr_to_bram_vga_stream_v1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  1 21:25:46 2024...

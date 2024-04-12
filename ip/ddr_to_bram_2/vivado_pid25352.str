@@ -1,0 +1,805 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 25352
+License: Customer
+
+Current time: 	Mon Apr 01 21:24:40 EDT 2024
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1920x1200
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 335 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Jazim
+User home directory: C:/Users/Jazim
+User working directory: C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/Jazim/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/Jazim/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/Jazim/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/vivado.log
+Vivado journal file location: 	C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/vivado.jou
+Engine tmp dir: 	C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/.Xil/Vivado-25352-JazimPC
+
+Xilinx Environment Variables
+----------------------------
+ALTERAOCLSDKROOT: C:\intelFPGA\17.1\hld
+VK_SDK_PATH: C:\VulkanSDK\1.3.239.0
+VULKAN_SDK: C:\VulkanSDK\1.3.239.0
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 699 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\Jazim\school\ECE532\project\Vivado\custom_ip\ip_repo\ddr_to_bram\edit_ddr_to_bram_vga_stream_v1_0.xpr. Version: Vivado v2018.3 
+// bx (cp):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/edit_ddr_to_bram_vga_stream_v1_0.xpr 
+// Tcl Message: open_project C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/edit_ddr_to_bram_vga_stream_v1_0.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0'. 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 85 MB (+87091kb) [00:00:04]
+// [Engine Memory]: 657 MB (+537053kb) [00:00:04]
+// [GUI Memory]: 100 MB (+10701kb) [00:00:05]
+// WARNING: HEventQueue.dispatchEvent() is taking  1312 ms.
+// [Engine Memory]: 702 MB (+13470kb) [00:00:06]
+// Project name: edit_ddr_to_bram_vga_stream_v1_0; location: C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 702 MB. GUI used memory: 51 MB. Current time: 4/1/24, 9:24:42 PM EDT
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ddr_to_bram_vga_stream_v1_0 (ddr_to_bram_vga_stream_v1_0.v)]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ddr_to_bram_vga_stream_v1_0 (ddr_to_bram_vga_stream_v1_0.v), ddr_to_bram_vga_stream_v1_0_M00_AXI_inst : ddr_to_bram_vga_stream_v1_0_M00_AXI_2 (ddr_to_bram_vga_stream_v1_0_M00_AXI.v)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ddr_to_bram_vga_stream_v1_0 (ddr_to_bram_vga_stream_v1_0.v), ddr_to_bram_vga_stream_v1_0_M00_AXI_inst : ddr_to_bram_vga_stream_v1_0_M00_AXI_2 (ddr_to_bram_vga_stream_v1_0_M00_AXI.v)]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 465, 227); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 180, 201); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 151, 218); // cl (w, cp)
+typeControlKey((HResource) null, "ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 'v'); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 162, 283); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 162, 283, false, false, false, false, true); // cl (w, cp) - Double Click
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "PIXEL_COUNT"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "PIXEL_COUNT"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "PIXEL_COUNT"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "PIXEL_COUNT"); // l (aT, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "PIXEL_COUNT"); // l (aT, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 191, 41); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 191, 41, false, false, false, false, true); // cl (w, cp) - Double Click
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "PIXEL_HEIGHT"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "PIXEL_HEIGHT"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "PIXEL_HEIGHT"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "PIXEL_HEIGHT"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "PIXEL_HEIGHT"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "PIXEL_HEIGHT"); // l (aT, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "PIXEL_HEIGHT"); // l (aT, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 551, 196); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 109 MB (+4646kb) [00:00:45]
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ddr_to_bram_vga_stream_v1_0 (ddr_to_bram_vga_stream_v1_0.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ddr_to_bram_vga_stream_v1_0 (ddr_to_bram_vga_stream_v1_0.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 10 
+// Tcl Message: [Mon Apr  1 21:25:34 2024] Launched synth_1... Run output will be captured here: C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/edit_ddr_to_bram_vga_stream_v1_0.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 750 MB. GUI used memory: 54 MB. Current time: 4/1/24, 9:25:37 PM EDT
+// [Engine Memory]: 750 MB (+12860kb) [00:01:10]
+// TclEventType: RUN_COMPLETED
+// ah (cp): Synthesis Completed: addNotify
+// Elapsed time: 17 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (cp)
+// Elapsed time: 721 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aI (aF, cp)
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // g (aR, cp): FALSE
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands]", 0); // ah (Q, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 861 MB. GUI used memory: 55 MB. Current time: 4/1/24, 9:38:02 PM EDT
+// [Engine Memory]: 861 MB (+77094kb) [00:13:29]
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/axi_lite_test_1.0'; Can't find the specified path.. If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.. ]", 2, true, false, false, false, true, false); // ah (Q, cp) - Popup Trigger - Node
+selectMenu(PAResourceItoN.MsgTreePanel_MESSAGE_SEVERITY, "Message Severity"); // ac (K, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceItoN.MsgTreePanel_DISCARD_USER_CREATED_MESSAGES, "Discard User Created Messages"); // af (K, Popup.HeavyWeightWindow)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ddr_to_bram_vga_stream_v1_0 (ddr_to_bram_vga_stream_v1_0.v)]", 1); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ddr_to_bram_vga_stream_v1_0 (ddr_to_bram_vga_stream_v1_0.v)]", 1); // B (D, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,132 MB. GUI used memory: 55 MB. Current time: 4/1/24, 9:38:22 PM EDT
+// Elapsed time: 14 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3331] design ddr_to_bram_vga_stream_v1_0_M00_AXI_2 has unconnected port M_AXI_BID[0]. ]", 8, true); // ah (Q, cp) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3917] design ddr_to_bram_vga_stream_v1_0 has port m00_axi_awid[0] driven by constant 0. ]", 9, true); // ah (Q, cp) - Node
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis]", 0); // ah (Q, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,357 MB. GUI used memory: 55 MB. Current time: 4/1/24, 9:38:37 PM EDT
+// [Engine Memory]: 1,357 MB (+474679kb) [00:14:13]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,357 MB. GUI used memory: 55 MB. Current time: 4/1/24, 10:08:40 PM EDT
+// Elapsed time: 2030 seconds
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0.v", 792, 198); // cl (w, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cur_frame", true); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cur_frame"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cur_frame"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cur_frame"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cur_frame"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cur_frame"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cur_frame"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cur_frame"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cur_frame"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cur_frame"); // l (aT, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cur_frame"); // l (aT, cp)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ddr_to_bram_vga_stream_v1_0 (ddr_to_bram_vga_stream_v1_0.v)]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ddr_to_bram_vga_stream_v1_0 (ddr_to_bram_vga_stream_v1_0.v), ddr_to_bram_vga_stream_v1_0_M00_AXI_inst : ddr_to_bram_vga_stream_v1_0_M00_AXI_2 (ddr_to_bram_vga_stream_v1_0_M00_AXI.v)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ddr_to_bram_vga_stream_v1_0 (ddr_to_bram_vga_stream_v1_0.v), ddr_to_bram_vga_stream_v1_0_M00_AXI_inst : ddr_to_bram_vga_stream_v1_0_M00_AXI_2 (ddr_to_bram_vga_stream_v1_0_M00_AXI.v)]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 690, 199); // cl (w, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cur_frame", true); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cur_frame"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cur_frame"); // l (aT, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cur_frame"); // l (aT, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 214, 318); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 213, 318, false, false, false, false, true); // cl (w, cp) - Double Click
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "current_frame"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "current_frame"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "current_frame"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "current_frame"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "current_frame"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "current_frame"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "current_frame"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "current_frame"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "current_frame"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "current_frame"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "current_frame"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "current_frame"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "current_frame"); // l (aT, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 623, 451); // cl (w, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "awaddr", true); // l (aT, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "awaddr"); // l (aT, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 195, 347); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 106, 366); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 106, 366, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 452, 361); // cl (w, cp)
+typeControlKey((HResource) null, "ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 'c'); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 504, 347); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 167, 349); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 167, 349, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 188, 346); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 188, 346, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 296, 345); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 214, 348); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 214, 348, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 315, 339); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 538, 354); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 161, 351); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 229, 354); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 224, 354); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 167, 355); // cl (w, cp)
+typeControlKey((HResource) null, "ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 'v'); // cl (w, cp)
+typeControlKey(null, null, 'z');
+// Elapsed time: 10 seconds
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 212, 353); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 212, 353, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 242, 355); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 242, 355, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 575, 348); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 729, 348); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 698, 348); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 257, 353); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 612, 352); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 665, 345); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 247, 353); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 247, 353, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 604, 350); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 323, 350); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 577, 350); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 323, 350); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 553, 348); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 590, 346); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,357 MB. GUI used memory: 52 MB. Current time: 4/1/24, 10:38:43 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,357 MB. GUI used memory: 51 MB. Current time: 4/1/24, 11:08:45 PM EDT
+// Elapsed time: 3462 seconds
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 220, 429); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 220, 429, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 432, 437); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 398, 394); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 438, 384); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 450, 404); // cl (w, cp)
+// Elapsed time: 10 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "wdata"); // l (aT, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 136, 334); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 136, 334, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 506, 331); // cl (w, cp)
+typeControlKey((HResource) null, "ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 'c'); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 161, 330); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 161, 330, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ddr_to_bram_vga_stream_v1_0 (ddr_to_bram_vga_stream_v1_0.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ddr_to_bram_vga_stream_v1_0 (ddr_to_bram_vga_stream_v1_0.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0.v", 251, 262); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0.v", 251, 262, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0.v", 193, 319); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0.v", 193, 318, false, false, false, false, true); // cl (w, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 1); // k (j, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 541, 334); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 163, 332); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 163, 332, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 304, 333); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 304, 332, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 502, 334); // cl (w, cp)
+typeControlKey((HResource) null, "ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 'c'); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 169, 335); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 169, 335, false, false, false, false, true); // cl (w, cp) - Double Click
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "m2_axi_wdata"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "m2_axi_wdata"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "m2_axi_wdata"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "m2_axi_wdata"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "m2_axi_wdata"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "m2_axi_wdata"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "m2_axi_wdata"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "m2_axi_wdata"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "m2_axi_wdata"); // l (aT, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 421, 362); // cl (w, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT]", 2); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT, component.xml]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT, component.xml]", 3, false, false, false, false, false, true); // B (D, cp) - Double Click
+// bx (cp):  Open IP-XACT File : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: LOAD_FEATURE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::open_ipxact_file {C:\Users\Jazim\school\ECE532\project\Vivado\custom_ip\ip_repo\ddr_to_bram\ddr_to_bram_vga_stream_1.0\component.xml} 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_OBJECT_CHANGE
+dismissDialog("Open IP-XACT File"); // bx (cp)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization Parameters", 3); // ar (Q, cp)
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from Customization Parameters Wizard"); // h (M, cp)
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::merge_project_changes hdl_parameters [ipx::current_core] 
+// Tcl Message: INFO: [IP_Flow 19-3164] Bus Interface 'M00_AXI': References existing address space 'M00_AXI'. INFO: [IP_Flow 19-3164] Bus Interface 'M01_AXI': References existing address space 'M01_AXI'. 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar (Q, cp)
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, cp)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 37 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0' 
+// [GUI Memory]: 115 MB (+550kb) [01:48:47]
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_OK", "OK"); // JButton (C, I)
+// Elapsed time: 55 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ddr_to_bram_vga_stream_v1_0.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - ddr_to_bram_vga_stream", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ddr_to_bram_vga_stream_v1_0.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - ddr_to_bram_vga_stream", 3); // k (j, cp)
+// [GUI Memory]: 127 MB (+5903kb) [01:49:46]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ddr_to_bram_vga_stream_v1_0.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 2); // k (j, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 239, 163); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 239, 163, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 327, 419); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 231, 414); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 231, 414, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 260, 373); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 260, 373, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 237, 422); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 237, 422, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 326, 419); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 216, 418); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 216, 418, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 325, 419); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 325, 422); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 329, 419); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 411, 421); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 328, 411); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 444, 415); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 438, 418); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 587, 397); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 475, 414); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 416, 413); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 106, 415); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 106, 415, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 24 seconds
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 404, 413); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 274, 397); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 274, 397, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 422, 417); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 422, 417); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 412, 417); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 426, 417); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 402, 414); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 431, 417); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 493, 410); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 427, 413); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 415, 417); // cl (w, cp)
+// Elapsed time: 27 seconds
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 320, 419); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 147, 373); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 147, 373, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 323, 423); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 249, 412); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 249, 412, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 321, 415); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 250, 416); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 250, 416, false, false, false, false, true); // cl (w, cp) - Double Click
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "burst_count_total"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "burst_count_total"); // l (aT, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 311, 215); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 311, 215, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 390, 214); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 314, 218); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 314, 218, false, false, false, false, true); // cl (w, cp) - Double Click
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 376, 214); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 355, 308); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 365, 260); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 353, 319); // cl (w, cp)
+// Elapsed time: 24 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "frame_buffer"); // l (aT, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 226, 322); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 226, 322, false, false, false, false, true); // cl (w, cp) - Double Click
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "BURST_COUNT_TOTAL"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "BURST_COUNT_TOTAL"); // l (aT, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 196, 436); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 195, 436, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 364, 420); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 364, 420, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 194, 477); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 194, 477, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 204, 420); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 204, 420, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 195, 441); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 195, 441, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 301, 437); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 118, 452); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 176, 431); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 176, 431, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 145, 356); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 145, 356, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 176, 431); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 176, 431, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 203, 361); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 203, 361, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 318, 408); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 318, 408, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 31 seconds
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 479, 423); // cl (w, cp)
+// Elapsed time: 34 seconds
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 336, 410); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 336, 409, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 224, 415); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 224, 415, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 229, 414); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 229, 414, false, false, false, false, true); // cl (w, cp) - Double Click
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "burst_count_total"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "burst_count_total"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "burst_count_total"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "burst_count_total"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "burst_count_total"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "burst_count_total"); // l (aT, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "burst_count_total"); // l (aT, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 324, 420); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 324, 420, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 432, 395); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 418, 415); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 440, 414); // cl (w, cp)
+// Elapsed time: 26 seconds
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 322, 416); // cl (w, cp)
+typeControlKey((HResource) null, "ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 'v'); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 639, 404); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 596, 415); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 390, 416); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 390, 416, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 698, 419); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 246, 418); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 246, 418, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 419, 419); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 419, 417, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 576, 419); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 585, 415); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 235, 413); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 235, 413, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 402, 418); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 402, 418, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 960, 456, false, true, false, false, false); // cl (w, cp) - Control Key
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 569, 403); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 557, 408); // cl (w, cp)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 601, 211); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 303, 217); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 303, 217, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 311, 214); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 311, 214, false, false, false, false, true); // cl (w, cp) - Double Click
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 556, 295); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - ddr_to_bram_vga_stream", 1); // k (j, cp)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // ar (Q, cp)
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from File Groups Wizard"); // h (M, cp)
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::merge_project_changes files [ipx::current_core] 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar (Q, cp)
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, cp)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 38 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0' 
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 133 MB (+237kb) [01:56:20]
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_OK", "OK"); // JButton (C, I)
+// Elapsed time: 534 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 2); // k (j, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 526, 412); // cl (w, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "current_frame", true); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "current_frame"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "current_frame"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "current_frame"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "current_frame"); // l (aT, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "current_frame"); // l (aT, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 238, 418); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 238, 418, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 119, 414); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 119, 414, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 195, 416); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 195, 416, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 289, 422); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 289, 422, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 323, 416); // cl (w, cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 290, 417); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 290, 417, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 100, 417); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 100, 417, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 207, 416); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 207, 416, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 296, 419); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 278, 421); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 278, 421, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 316, 416); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 316, 416, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 205, 421); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 205, 421, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 287, 422); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 287, 422, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 315, 415); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 315, 415, false, false, false, false, true); // cl (w, cp) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,357 MB. GUI used memory: 71 MB. Current time: 4/1/24, 11:38:47 PM EDT
+// Elapsed time: 1498 seconds
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 604, 418); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 568, 434); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 217, 429); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 229, 413); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 229, 413, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 129, 415); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 129, 415, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 585, 415); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 584, 413); // cl (w, cp)
+selectCodeEditor("ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 557, 431); // cl (w, cp)
+typeControlKey((HResource) null, "ddr_to_bram_vga_stream_v1_0_M00_AXI.v", 'c'); // cl (w, cp)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 169 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ddr_to_bram_vga_stream_v1_0.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - ddr_to_bram_vga_stream", 1); // k (j, cp)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // ar (Q, cp)
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from File Groups Wizard"); // h (M, cp)
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::merge_project_changes files [ipx::current_core] 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar (Q, cp)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, cp)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 39 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0' 
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_OK", "OK"); // JButton (C, I)
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,357 MB. GUI used memory: 76 MB. Current time: 4/2/24, 12:08:50 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,357 MB. GUI used memory: 76 MB. Current time: 4/2/24, 12:38:53 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,357 MB. GUI used memory: 75 MB. Current time: 4/2/24, 1:08:56 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,357 MB. GUI used memory: 75 MB. Current time: 4/2/24, 1:38:59 AM EDT
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 6503 seconds
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // ar (Q, cp)
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from File Groups Wizard"); // h (M, cp)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton (C, I)
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from File Groups Wizard"); // h (M, cp)
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::merge_project_changes files [ipx::current_core] 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar (Q, cp)
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, cp)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 40 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0' 
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_OK", "OK"); // JButton (C, I)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 171 seconds
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // ar (Q, cp)
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from File Groups Wizard"); // h (M, cp)
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::merge_project_changes files [ipx::current_core] 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar (Q, cp)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, cp)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 41 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0' 
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_OK", "OK"); // JButton (C, I)
+// [GUI Memory]: 144 MB (+4315kb) [04:25:41]
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 860 seconds
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // ar (Q, cp)
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from File Groups Wizard"); // h (M, cp)
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::merge_project_changes files [ipx::current_core] 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar (Q, cp)
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, cp)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 42 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0' 
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_OK", "OK"); // JButton (C, I)
+// [GUI Memory]: 155 MB (+3287kb) [04:41:32]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,357 MB. GUI used memory: 93 MB. Current time: 4/2/24, 2:09:01 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,357 MB. GUI used memory: 92 MB. Current time: 4/2/24, 2:39:04 AM EDT
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 2427 seconds
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_IP_THAT_REQUIRE, "IP has been modified."); // h (M, cp)
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // ar (Q, cp)
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from File Groups Wizard"); // h (M, cp)
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::merge_project_changes files [ipx::current_core] 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar (Q, cp)
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, cp)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 43 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0' 
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_OK", "OK"); // JButton (C, I)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 1249 seconds
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // ar (Q, cp)
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from File Groups Wizard"); // h (M, cp)
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::merge_project_changes files [ipx::current_core] 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar (Q, cp)
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, cp)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 44 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram/ddr_to_bram_vga_stream_1.0' 
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_OK", "OK"); // JButton (C, I)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,357 MB. GUI used memory: 103 MB. Current time: 4/2/24, 3:09:07 AM EDT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 29293449 ms. Increasing delay to 87880347 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 29294436 ms. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,357 MB. GUI used memory: 104 MB. Current time: 4/2/24, 11:32:08 AM EDT

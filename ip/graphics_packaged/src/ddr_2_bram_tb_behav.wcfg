@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ddr_2_bram_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="axi_bram_ctrl_funcs" />
+            <top_module name="ddr_2_bram_tb" />
+            <top_module name="glbl" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="4162158200000fs"></ZoomStartTime>
+      <ZoomEndTime time="4162291000001fs"></ZoomEndTime>
+      <Cursor1Time time="4162178400000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="224"></NameColumnWidth>
+      <ValueColumnWidth column_width="87"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="120" />
+   <wvobject fp_name="/ddr_2_bram_tb/reset_n" type="logic">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/clk_100" type="logic">
+      <obj_property name="ElementShortName">clk_100</obj_property>
+      <obj_property name="ObjectShortName">clk_100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/clk_25" type="logic">
+      <obj_property name="ElementShortName">clk_25</obj_property>
+      <obj_property name="ObjectShortName">clk_25</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/line_sync" type="logic">
+      <obj_property name="ElementShortName">line_sync</obj_property>
+      <obj_property name="ObjectShortName">line_sync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/line_sync_100" type="logic">
+      <obj_property name="ElementShortName">line_sync_100</obj_property>
+      <obj_property name="ObjectShortName">line_sync_100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/frame_sync" type="logic">
+      <obj_property name="ElementShortName">frame_sync</obj_property>
+      <obj_property name="ObjectShortName">frame_sync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/frame_sync_100" type="logic">
+      <obj_property name="ElementShortName">frame_sync_100</obj_property>
+      <obj_property name="ObjectShortName">frame_sync_100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/BRAM_PORTB_addr" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTB_addr[12:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_addr[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/BRAM_PORTB_clk" type="logic">
+      <obj_property name="ElementShortName">BRAM_PORTB_clk</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/BRAM_PORTB_dout" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTB_dout[15:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_dout[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/BRAM_PORTB_en" type="logic">
+      <obj_property name="ElementShortName">BRAM_PORTB_en</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/rgb_out" type="array">
+      <obj_property name="ElementShortName">rgb_out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">rgb_out[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/vga_r" type="array">
+      <obj_property name="ElementShortName">vga_r[3:0]</obj_property>
+      <obj_property name="ObjectShortName">vga_r[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/vga_g" type="array">
+      <obj_property name="ElementShortName">vga_g[3:0]</obj_property>
+      <obj_property name="ObjectShortName">vga_g[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/vga_b" type="array">
+      <obj_property name="ElementShortName">vga_b[3:0]</obj_property>
+      <obj_property name="ObjectShortName">vga_b[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/vga_hs" type="logic">
+      <obj_property name="ElementShortName">vga_hs</obj_property>
+      <obj_property name="ObjectShortName">vga_hs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/vga_vs" type="logic">
+      <obj_property name="ElementShortName">vga_vs</obj_property>
+      <obj_property name="ObjectShortName">vga_vs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/bram_addra_in" type="array">
+      <obj_property name="ElementShortName">bram_addra_in[12:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_addra_in[12:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider206">
+      <obj_property name="label">LINE_BUFFER</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u1/addrb" type="array">
+      <obj_property name="ElementShortName">addrb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addrb[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u1/dinb" type="array">
+      <obj_property name="ElementShortName">dinb[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dinb[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u1/rgb_out" type="array">
+      <obj_property name="ElementShortName">rgb_out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">rgb_out[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u1/start_next_line" type="logic">
+      <obj_property name="ElementShortName">start_next_line</obj_property>
+      <obj_property name="ObjectShortName">start_next_line</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u1/frame_sync" type="logic">
+      <obj_property name="ElementShortName">frame_sync</obj_property>
+      <obj_property name="ObjectShortName">frame_sync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u1/curr_line" type="array">
+      <obj_property name="ElementShortName">curr_line[0:0]</obj_property>
+      <obj_property name="ObjectShortName">curr_line[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u1/pixel_count" type="array">
+      <obj_property name="ElementShortName">pixel_count[9:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_count[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider19">
+      <obj_property name="label">DDR_2_BRAM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/ddr_to_bram_vga_stre_0/inst/ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/line_sync" type="logic">
+      <obj_property name="ElementShortName">line_sync</obj_property>
+      <obj_property name="ObjectShortName">line_sync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/ddr_to_bram_vga_stre_0/inst/ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/frame_sync" type="logic">
+      <obj_property name="ElementShortName">frame_sync</obj_property>
+      <obj_property name="ObjectShortName">frame_sync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/ddr_to_bram_vga_stre_0/inst/ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/cur_frame" type="logic">
+      <obj_property name="ElementShortName">cur_frame</obj_property>
+      <obj_property name="ObjectShortName">cur_frame</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/ddr_to_bram_vga_stre_0/inst/ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/M_AXI_ARADDR" type="array">
+      <obj_property name="ElementShortName">M_AXI_ARADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ARADDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/ddr_to_bram_vga_stre_0/inst/ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/M_AXI_ARVALID" type="logic">
+      <obj_property name="ElementShortName">M_AXI_ARVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ARVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/ddr_to_bram_vga_stre_0/inst/ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/M_AXI_ARREADY" type="logic">
+      <obj_property name="ElementShortName">M_AXI_ARREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ARREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/ddr_to_bram_vga_stre_0/inst/ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/M_AXI_RDATA" type="array">
+      <obj_property name="ElementShortName">M_AXI_RDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_RDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/ddr_to_bram_vga_stre_0/inst/ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/M_AXI_RVALID" type="logic">
+      <obj_property name="ElementShortName">M_AXI_RVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_RVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/ddr_to_bram_vga_stre_0/inst/ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/M_AXI_RLAST" type="logic">
+      <obj_property name="ElementShortName">M_AXI_RLAST</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_RLAST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/ddr_to_bram_vga_stre_0/inst/ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/M_AXI_RREADY" type="logic">
+      <obj_property name="ElementShortName">M_AXI_RREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_RREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/ddr_to_bram_vga_stre_0/inst/ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/M2_AXI_AWADDR" type="array">
+      <obj_property name="ElementShortName">M2_AXI_AWADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M2_AXI_AWADDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/ddr_to_bram_vga_stre_0/inst/ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/M2_AXI_AWVALID" type="logic">
+      <obj_property name="ElementShortName">M2_AXI_AWVALID</obj_property>
+      <obj_property name="ObjectShortName">M2_AXI_AWVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/ddr_to_bram_vga_stre_0/inst/ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/M2_AXI_AWREADY" type="logic">
+      <obj_property name="ElementShortName">M2_AXI_AWREADY</obj_property>
+      <obj_property name="ObjectShortName">M2_AXI_AWREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/ddr_to_bram_vga_stre_0/inst/ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/M2_AXI_WDATA" type="array">
+      <obj_property name="ElementShortName">M2_AXI_WDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M2_AXI_WDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/ddr_to_bram_vga_stre_0/inst/ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/M2_AXI_WVALID" type="logic">
+      <obj_property name="ElementShortName">M2_AXI_WVALID</obj_property>
+      <obj_property name="ObjectShortName">M2_AXI_WVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/ddr_to_bram_vga_stre_0/inst/ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/M2_AXI_WREADY" type="logic">
+      <obj_property name="ElementShortName">M2_AXI_WREADY</obj_property>
+      <obj_property name="ObjectShortName">M2_AXI_WREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/ddr_to_bram_vga_stre_0/inst/ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/read_index" type="array">
+      <obj_property name="ElementShortName">read_index[8:0]</obj_property>
+      <obj_property name="ObjectShortName">read_index[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/ddr_to_bram_vga_stre_0/inst/ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/burst_count_total" type="array">
+      <obj_property name="ElementShortName">burst_count_total[10:0]</obj_property>
+      <obj_property name="ObjectShortName">burst_count_total[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/ddr_to_bram_vga_stre_0/inst/ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/start_single_burst" type="logic">
+      <obj_property name="ElementShortName">start_single_burst</obj_property>
+      <obj_property name="ObjectShortName">start_single_burst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/ddr_to_bram_vga_stre_0/inst/ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/burst_complete" type="logic">
+      <obj_property name="ElementShortName">burst_complete</obj_property>
+      <obj_property name="ObjectShortName">burst_complete</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/ddr_to_bram_vga_stre_0/inst/ddr_to_bram_vga_stream_v1_0_M00_AXI_inst/busy" type="logic">
+      <obj_property name="ElementShortName">busy</obj_property>
+      <obj_property name="ObjectShortName">busy</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider61">
+      <obj_property name="label">GR</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/inst/graphics_rendering_v2_0_S00_AXI_inst/M_AXI_AWADDR" type="array">
+      <obj_property name="ElementShortName">M_AXI_AWADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_AWADDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/inst/graphics_rendering_v2_0_S00_AXI_inst/M_AXI_AWVALID" type="logic">
+      <obj_property name="ElementShortName">M_AXI_AWVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_AWVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/inst/graphics_rendering_v2_0_S00_AXI_inst/M_AXI_AWREADY" type="logic">
+      <obj_property name="ElementShortName">M_AXI_AWREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_AWREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/inst/graphics_rendering_v2_0_S00_AXI_inst/M_AXI_WDATA" type="array">
+      <obj_property name="ElementShortName">M_AXI_WDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_WDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/inst/graphics_rendering_v2_0_S00_AXI_inst/M_AXI_WVALID" type="logic">
+      <obj_property name="ElementShortName">M_AXI_WVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_WVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/inst/graphics_rendering_v2_0_S00_AXI_inst/M_AXI_WREADY" type="logic">
+      <obj_property name="ElementShortName">M_AXI_WREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_WREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/inst/graphics_rendering_v2_0_S00_AXI_inst/sprite_input_idx" type="array">
+      <obj_property name="ElementShortName">sprite_input_idx[2:0]</obj_property>
+      <obj_property name="ObjectShortName">sprite_input_idx[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/inst/graphics_rendering_v2_0_S00_AXI_inst/sprite_output_idx" type="array">
+      <obj_property name="ElementShortName">sprite_output_idx[2:0]</obj_property>
+      <obj_property name="ObjectShortName">sprite_output_idx[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/bram_addrb" type="array">
+      <obj_property name="ElementShortName">bram_addrb[13:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_addrb[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/bram0_dinb" type="array">
+      <obj_property name="ElementShortName">bram0_dinb[15:0]</obj_property>
+      <obj_property name="ObjectShortName">bram0_dinb[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/bram1_dinb" type="array">
+      <obj_property name="ElementShortName">bram1_dinb[15:0]</obj_property>
+      <obj_property name="ObjectShortName">bram1_dinb[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/bram2_dinb" type="array">
+      <obj_property name="ElementShortName">bram2_dinb[15:0]</obj_property>
+      <obj_property name="ObjectShortName">bram2_dinb[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/bram3_dinb" type="array">
+      <obj_property name="ElementShortName">bram3_dinb[15:0]</obj_property>
+      <obj_property name="ObjectShortName">bram3_dinb[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/bram4_dinb" type="array">
+      <obj_property name="ElementShortName">bram4_dinb[15:0]</obj_property>
+      <obj_property name="ObjectShortName">bram4_dinb[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/bram_addrb" type="array">
+      <obj_property name="ElementShortName">bram_addrb[13:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_addrb[13:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/bram0_enb" type="logic">
+      <obj_property name="ElementShortName">bram0_enb</obj_property>
+      <obj_property name="ObjectShortName">bram0_enb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/bram1_enb" type="logic">
+      <obj_property name="ElementShortName">bram1_enb</obj_property>
+      <obj_property name="ObjectShortName">bram1_enb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/bram2_enb" type="logic">
+      <obj_property name="ElementShortName">bram2_enb</obj_property>
+      <obj_property name="ObjectShortName">bram2_enb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/bram3_enb" type="logic">
+      <obj_property name="ElementShortName">bram3_enb</obj_property>
+      <obj_property name="ObjectShortName">bram3_enb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/bram4_enb" type="logic">
+      <obj_property name="ElementShortName">bram4_enb</obj_property>
+      <obj_property name="ObjectShortName">bram4_enb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/inst/graphics_rendering_v2_0_S00_AXI_inst/state" type="array">
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/inst/graphics_rendering_v2_0_S00_AXI_inst/ddr_addr_gen" type="array">
+      <obj_property name="ElementShortName">ddr_addr_gen[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr_addr_gen[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/inst/graphics_rendering_v2_0_S00_AXI_inst/Address_bound" type="array">
+      <obj_property name="ElementShortName">Address_bound[19:0]</obj_property>
+      <obj_property name="ObjectShortName">Address_bound[19:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/inst/graphics_rendering_v2_0_S00_AXI_inst/Z_value" type="array">
+      <obj_property name="ElementShortName">Z_value[15:0]</obj_property>
+      <obj_property name="ObjectShortName">Z_value[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/inst/graphics_rendering_v2_0_S00_AXI_inst/X_value" type="array">
+      <obj_property name="ElementShortName">X_value[8:0]</obj_property>
+      <obj_property name="ObjectShortName">X_value[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/inst/graphics_rendering_v2_0_S00_AXI_inst/Y_value" type="array">
+      <obj_property name="ElementShortName">Y_value[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Y_value[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/inst/graphics_rendering_v2_0_S00_AXI_inst/I_index" type="array">
+      <obj_property name="ElementShortName">I_index[23:0]</obj_property>
+      <obj_property name="ObjectShortName">I_index[23:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/inst/graphics_rendering_v2_0_S00_AXI_inst/J_index" type="array">
+      <obj_property name="ElementShortName">J_index[23:0]</obj_property>
+      <obj_property name="ObjectShortName">J_index[23:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/inst/graphics_rendering_v2_0_S00_AXI_inst/ddr_i" type="array">
+      <obj_property name="ElementShortName">ddr_i[8:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr_i[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/inst/graphics_rendering_v2_0_S00_AXI_inst/ddr_j" type="array">
+      <obj_property name="ElementShortName">ddr_j[8:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr_j[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/inst/graphics_rendering_v2_0_S00_AXI_inst/pixel_count_x" type="array">
+      <obj_property name="ElementShortName">pixel_count_x[8:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_count_x[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/inst/graphics_rendering_v2_0_S00_AXI_inst/pixel_count_y" type="array">
+      <obj_property name="ElementShortName">pixel_count_y[8:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_count_y[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/inst/graphics_rendering_v2_0_S00_AXI_inst/Z_value_array" type="array">
+      <obj_property name="ElementShortName">Z_value_array[4:0][19:0]</obj_property>
+      <obj_property name="ObjectShortName">Z_value_array[4:0][19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/inst/graphics_rendering_v2_0_S00_AXI_inst/X_value_array" type="array">
+      <obj_property name="ElementShortName">X_value_array[4:0][8:0]</obj_property>
+      <obj_property name="ObjectShortName">X_value_array[4:0][8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/inst/graphics_rendering_v2_0_S00_AXI_inst/Y_value_array" type="array">
+      <obj_property name="ElementShortName">Y_value_array[4:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">Y_value_array[4:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/graphics_rendering_0/inst/graphics_rendering_v2_0_S00_AXI_inst/pixel_count_array" type="array">
+      <obj_property name="ElementShortName">pixel_count_array[4:0][8:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_count_array[4:0][8:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider241">
+      <obj_property name="label">AXI_FRAME_CTRL</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/axi_frame_ctrl/s_axi_awaddr" type="array">
+      <obj_property name="ElementShortName">s_axi_awaddr[19:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awaddr[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/axi_frame_ctrl/s_axi_awvalid" type="logic">
+      <obj_property name="ElementShortName">s_axi_awvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/axi_frame_ctrl/s_axi_awready" type="logic">
+      <obj_property name="ElementShortName">s_axi_awready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/axi_frame_ctrl/s_axi_wdata" type="array">
+      <obj_property name="ElementShortName">s_axi_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/axi_frame_ctrl/s_axi_wvalid" type="logic">
+      <obj_property name="ElementShortName">s_axi_wvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/axi_frame_ctrl/s_axi_wready" type="logic">
+      <obj_property name="ElementShortName">s_axi_wready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/axi_frame_ctrl/s_axi_araddr" type="array">
+      <obj_property name="ElementShortName">s_axi_araddr[19:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_araddr[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/axi_frame_ctrl/s_axi_arvalid" type="logic">
+      <obj_property name="ElementShortName">s_axi_arvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/axi_frame_ctrl/s_axi_arready" type="logic">
+      <obj_property name="ElementShortName">s_axi_arready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/axi_frame_ctrl/s_axi_rdata" type="array">
+      <obj_property name="ElementShortName">s_axi_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/axi_frame_ctrl/s_axi_rvalid" type="logic">
+      <obj_property name="ElementShortName">s_axi_rvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/axi_frame_ctrl/s_axi_rready" type="logic">
+      <obj_property name="ElementShortName">s_axi_rready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rready</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider121">
+      <obj_property name="label">AXI_FRAME_CTRL to BRAM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/axi_frame_ctrl/bram_en_a" type="logic">
+      <obj_property name="ElementShortName">bram_en_a</obj_property>
+      <obj_property name="ObjectShortName">bram_en_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/axi_frame_ctrl/bram_we_a" type="array">
+      <obj_property name="ElementShortName">bram_we_a[3:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_we_a[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/axi_frame_ctrl/bram_addr_a" type="array">
+      <obj_property name="ElementShortName">bram_addr_a[19:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_addr_a[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/axi_frame_ctrl/bram_wrdata_a" type="array">
+      <obj_property name="ElementShortName">bram_wrdata_a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_wrdata_a[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/axi_frame_ctrl/bram_rddata_a" type="array">
+      <obj_property name="ElementShortName">bram_rddata_a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_rddata_a[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/axi_frame_ctrl/bram_en_b" type="logic">
+      <obj_property name="ElementShortName">bram_en_b</obj_property>
+      <obj_property name="ObjectShortName">bram_en_b</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/axi_frame_ctrl/bram_we_b" type="array">
+      <obj_property name="ElementShortName">bram_we_b[3:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_we_b[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/axi_frame_ctrl/bram_addr_b" type="array">
+      <obj_property name="ElementShortName">bram_addr_b[19:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_addr_b[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/axi_frame_ctrl/bram_wrdata_b" type="array">
+      <obj_property name="ElementShortName">bram_wrdata_b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_wrdata_b[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/axi_frame_ctrl/bram_rddata_b" type="array">
+      <obj_property name="ElementShortName">bram_rddata_b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_rddata_b[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider120">
+      <obj_property name="label">BRAM_FRAME</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/bram_frame/ena" type="logic">
+      <obj_property name="ElementShortName">ena</obj_property>
+      <obj_property name="ObjectShortName">ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/bram_frame/wea" type="array">
+      <obj_property name="ElementShortName">wea[0:0]</obj_property>
+      <obj_property name="ObjectShortName">wea[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/bram_frame/addra" type="array">
+      <obj_property name="ElementShortName">addra[17:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/bram_frame/dina" type="array">
+      <obj_property name="ElementShortName">dina[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/bram_frame/douta" type="array">
+      <obj_property name="ElementShortName">douta[11:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/bram_frame/enb" type="logic">
+      <obj_property name="ElementShortName">enb</obj_property>
+      <obj_property name="ObjectShortName">enb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/bram_frame/web" type="array">
+      <obj_property name="ElementShortName">web[0:0]</obj_property>
+      <obj_property name="ObjectShortName">web[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/bram_frame/addrb" type="array">
+      <obj_property name="ElementShortName">addrb[17:0]</obj_property>
+      <obj_property name="ObjectShortName">addrb[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/bram_frame/dinb" type="array">
+      <obj_property name="ElementShortName">dinb[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dinb[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ddr_2_bram_tb/u0/design_1_i/bram_frame/doutb" type="array">
+      <obj_property name="ElementShortName">doutb[11:0]</obj_property>
+      <obj_property name="ObjectShortName">doutb[11:0]</obj_property>
+   </wvobject>
+</wave_config>

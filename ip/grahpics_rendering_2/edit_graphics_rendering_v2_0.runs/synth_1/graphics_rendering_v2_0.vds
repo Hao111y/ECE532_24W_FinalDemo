@@ -1,0 +1,645 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Apr  1 21:39:13 2024
+# Process ID: 28036
+# Current directory: c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/edit_graphics_rendering_v2_0.runs/synth_1
+# Command line: vivado.exe -log graphics_rendering_v2_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source graphics_rendering_v2_0.tcl
+# Log file: c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/edit_graphics_rendering_v2_0.runs/synth_1/graphics_rendering_v2_0.vds
+# Journal file: c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/edit_graphics_rendering_v2_0.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source graphics_rendering_v2_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering/graphics_rendering_1.0'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/graphics_rendering/graphics_rendering_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/physics_core_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/bram_2_ddr_stream_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/ddr_to_bram_vga_stream_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/axi_lite_test_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/sequential_read_axi_lite_master_2.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/sequential_read_axi_lite_master_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/users/jazim/school/ece532/project/vivado/custom_ip/ip_repo/grahpics_rendering_2/edit_graphics_rendering_v2_0.cache/ip 
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering_v2_0.v:]
+Command: synth_design -top graphics_rendering_v2_0 -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11500 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 392.863 ; gain = 102.941
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'graphics_rendering_v2_0' [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering_v2_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter C_M00_AXI_TARGET_SLAVE_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter C_M00_AXI_BURST_LEN bound to: 64 - type: integer 
+	Parameter C_M00_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M00_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M00_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M00_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M00_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'graphics_rendering' [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering.sv:3]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter C_M_TARGET_SLAVE_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter C_M_AXI_BURST_LEN bound to: 64 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+	Parameter CLEAR_VALUE bound to: 458759 - type: integer 
+	Parameter SPRITE_CNT bound to: 5 - type: integer 
+	Parameter SPRITE_PIXELS_TABLE bound to: 128 - type: integer 
+	Parameter SPRITE_PIXELS bound to: 64 - type: integer 
+	Parameter ALPHA_PADDLE1 bound to: 33 - type: integer 
+	Parameter BETA_PADDLE1 bound to: 12 - type: integer 
+	Parameter ALPHA_PADDLE2 bound to: 33 - type: integer 
+	Parameter BETA_PADDLE2 bound to: 12 - type: integer 
+	Parameter ALPHA_BALL bound to: 37 - type: integer 
+	Parameter BETA_BALL bound to: 11 - type: integer 
+	Parameter ALPHA_NET bound to: 3 - type: integer 
+	Parameter BETA_NET bound to: 13 - type: integer 
+	Parameter ALPHA_TABLE bound to: 3 - type: integer 
+	Parameter BETA_TABLE bound to: 13 - type: integer 
+	Parameter Z_value_4 bound to: 20'b10100000000100010000 
+	Parameter Z_value_3 bound to: 20'b11000000000110111010 
+	Parameter Z_value_2 bound to: 20'b10000000000111000010 
+	Parameter Z_value_1 bound to: 20'b10010000000111000010 
+	Parameter Z_value_0 bound to: 20'b10110000000111110100 
+	Parameter X_value_4 bound to: 16'sb0000000010010110 
+	Parameter X_value_3 bound to: 16'sb0000000010011101 
+	Parameter X_value_2 bound to: 16'sb0000000000001011 
+	Parameter X_value_1 bound to: 16'sb0000000000001011 
+	Parameter X_value_0 bound to: 16'sb0000000010010110 
+	Parameter Y_value_4 bound to: 16'sb0000000010000111 
+	Parameter Y_value_3 bound to: 16'sb0000000001110011 
+	Parameter Y_value_2 bound to: 16'sb0000000000000001 
+	Parameter Y_value_1 bound to: 16'sb0000000000000001 
+	Parameter Y_value_0 bound to: 16'sb0000000001110011 
+	Parameter pixel_count_4 bound to: 16'sb0000000000011001 
+	Parameter pixel_count_3 bound to: 16'sb0000000000001100 
+	Parameter pixel_count_2 bound to: 16'sb0000000000110010 
+	Parameter pixel_count_1 bound to: 16'sb0000000000110010 
+	Parameter pixel_count_0 bound to: 16'sb0000000000010110 
+	Parameter IDLE bound to: 4'b0000 
+	Parameter CLEAR_ADDR_CHECK bound to: 4'b0001 
+	Parameter CLEAR_BURST_INIT bound to: 4'b0010 
+	Parameter CLEAR bound to: 4'b0011 
+	Parameter DECODE bound to: 4'b0100 
+	Parameter ADDRESS_CHECK bound to: 4'b0101 
+	Parameter BRAM_ADDR_INIT1 bound to: 4'b0110 
+	Parameter BRAM_ADDR_INIT2 bound to: 4'b0111 
+	Parameter BRAM_ADDR_INIT3 bound to: 4'b1000 
+	Parameter DDR_BURST_INIT bound to: 4'b1001 
+	Parameter BRAM_ADDR_EN1 bound to: 4'b1010 
+	Parameter BRAM_ADDR_EN2 bound to: 4'b1011 
+	Parameter BRAM_ADDR_EN3 bound to: 4'b1100 
+	Parameter DDR_SEND_DATA bound to: 4'b1101 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering.sv:351]
+WARNING: [Synth 8-6014] Unused sequential element ddr_bresp_reg was removed.  [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering.sv:636]
+INFO: [Synth 8-6155] done synthesizing module 'graphics_rendering' (1#1) [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'graphics_rendering_v2_0' (2#1) [c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering_v2_0.v:4]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port cur_frame
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port bram0_dinb[15]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port bram0_dinb[14]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port bram0_dinb[13]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port bram1_dinb[15]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port bram1_dinb[14]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port bram1_dinb[13]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port bram2_dinb[15]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port bram2_dinb[14]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port bram2_dinb[13]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port bram3_dinb[15]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port bram3_dinb[14]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port bram3_dinb[13]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port bram4_dinb[15]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port bram4_dinb[14]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port bram4_dinb[13]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_BID[0]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_BRESP[1]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_BRESP[0]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_BUSER[-1]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_BUSER[0]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_ARREADY
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RID[0]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[31]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[30]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[29]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[28]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[27]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[26]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[25]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[24]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[23]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[22]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[21]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[20]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[19]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[18]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[17]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[16]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[15]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[14]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[13]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[12]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[11]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[10]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[9]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[8]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[7]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[6]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[5]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[4]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[3]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[2]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[1]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RDATA[0]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RRESP[1]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RRESP[0]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RLAST
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RUSER[-1]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RUSER[0]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_RVALID
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port S_AXI_WDATA[31]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port S_AXI_WDATA[30]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port S_AXI_WDATA[29]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port S_AXI_WDATA[28]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port S_AXI_WDATA[27]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port S_AXI_WDATA[26]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port S_AXI_WDATA[25]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port S_AXI_WDATA[24]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port S_AXI_WDATA[23]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port S_AXI_WDATA[22]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port S_AXI_WDATA[21]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port S_AXI_WDATA[20]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port S_AXI_WSTRB[3]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port S_AXI_WSTRB[2]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port S_AXI_WSTRB[1]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port S_AXI_WSTRB[0]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 451.965 ; gain = 162.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 451.965 ; gain = 162.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 451.965 ; gain = 162.043
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering.sv:502]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <multiplier> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering.sv:502]
+INFO: [Synth 8-5544] ROM "bram_enb_reg[4]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bram_enb_reg[3]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bram_enb_reg[2]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bram_enb_reg[1]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bram_enb_reg[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Z_value_array" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Z_value_array" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Z_value_array" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Z_value_array" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Z_value_array" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "X_value_array" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "X_value_array" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "X_value_array" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "X_value_array" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "X_value_array" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Y_value_array" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Y_value_array" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Y_value_array" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Y_value_array" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Y_value_array" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pixel_count_array" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pixel_count_array" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pixel_count_array" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pixel_count_array" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pixel_count_array" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "burst_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ddr_wvalid" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ddr_wlast" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 491.945 ; gain = 202.023
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               24 Bit    Registers := 9     
+	               20 Bit    Registers := 5     
+	               19 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	                9 Bit    Registers := 16    
+	                8 Bit    Registers := 7     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	  15 Input     32 Bit        Muxes := 1     
+	  15 Input     24 Bit        Muxes := 2     
+	   6 Input     24 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 16    
+	  21 Input     20 Bit        Muxes := 5     
+	  15 Input     16 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 31    
+	  21 Input      9 Bit        Muxes := 10    
+	  15 Input      9 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 15    
+	  21 Input      8 Bit        Muxes := 5     
+	  15 Input      8 Bit        Muxes := 1     
+	  15 Input      6 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	  15 Input      4 Bit        Muxes := 1     
+	  15 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 62    
+	  15 Input      1 Bit        Muxes := 20    
+	  21 Input      1 Bit        Muxes := 20    
+	  16 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module graphics_rendering 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               24 Bit    Registers := 9     
+	               20 Bit    Registers := 5     
+	               19 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	                9 Bit    Registers := 16    
+	                8 Bit    Registers := 7     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	  15 Input     32 Bit        Muxes := 1     
+	  15 Input     24 Bit        Muxes := 2     
+	   6 Input     24 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 16    
+	  21 Input     20 Bit        Muxes := 5     
+	  15 Input     16 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 31    
+	  21 Input      9 Bit        Muxes := 10    
+	  15 Input      9 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 15    
+	  21 Input      8 Bit        Muxes := 5     
+	  15 Input      8 Bit        Muxes := 1     
+	  15 Input      6 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	  15 Input      4 Bit        Muxes := 1     
+	  15 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 62    
+	  15 Input      1 Bit        Muxes := 20    
+	  21 Input      1 Bit        Muxes := 20    
+	  16 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'ddr_j_reg[8:0]' into 'ddr_j_reg[8:0]' [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering.sv:293]
+INFO: [Synth 8-4471] merging register 'I_index_reg[23:0]' into 'I_index_reg[23:0]' [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering.sv:467]
+INFO: [Synth 8-4471] merging register 'I_index_reg[23:0]' into 'I_index_reg[23:0]' [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering.sv:467]
+INFO: [Synth 8-4471] merging register 'I_index_reg[23:0]' into 'I_index_reg[23:0]' [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering.sv:467]
+INFO: [Synth 8-4471] merging register 'I_index_reg[23:0]' into 'I_index_reg[23:0]' [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering.sv:467]
+INFO: [Synth 8-4471] merging register 'J_index_reg[23:0]' into 'J_index_reg[23:0]' [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering.sv:468]
+INFO: [Synth 8-4471] merging register 'J_index_reg[23:0]' into 'J_index_reg[23:0]' [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering.sv:468]
+INFO: [Synth 8-4471] merging register 'J_index_reg[23:0]' into 'J_index_reg[23:0]' [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering.sv:468]
+INFO: [Synth 8-4471] merging register 'ddr_i_reg[8:0]' into 'ddr_i_reg[8:0]' [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering.sv:293]
+INFO: [Synth 8-4471] merging register 'Z_value_reg[15:0]' into 'Z_value_reg[15:0]' [C:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/graphics_rendering_2.0/hdl/graphics_rendering.sv:338]
+INFO: [Synth 8-5546] ROM "ddr_wvalid" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP I_index1, operation Mode is: A2*(B:0x25).
+DSP Report: register I_index_reg is absorbed into DSP I_index1.
+DSP Report: operator I_index1 is absorbed into DSP I_index1.
+DSP Report: Generating DSP I_index1, operation Mode is: A2*(B:0x21).
+DSP Report: register I_index_reg is absorbed into DSP I_index1.
+DSP Report: operator I_index1 is absorbed into DSP I_index1.
+DSP Report: Generating DSP I_index0, operation Mode is: (D'+(A:0x1))*B2.
+DSP Report: register Z_value_reg is absorbed into DSP I_index0.
+DSP Report: register A is absorbed into DSP I_index0.
+DSP Report: operator I_index0 is absorbed into DSP I_index0.
+DSP Report: operator I_index1 is absorbed into DSP I_index0.
+DSP Report: Generating DSP J_index1, operation Mode is: A2*(B:0x25).
+DSP Report: register J_index_reg is absorbed into DSP J_index1.
+DSP Report: operator J_index1 is absorbed into DSP J_index1.
+DSP Report: Generating DSP J_index1, operation Mode is: A2*(B:0x21).
+DSP Report: register J_index_reg is absorbed into DSP J_index1.
+DSP Report: operator J_index1 is absorbed into DSP J_index1.
+DSP Report: Generating DSP J_index0, operation Mode is: (D'+(A:0x1))*B2.
+DSP Report: register Z_value_reg is absorbed into DSP J_index0.
+DSP Report: register A is absorbed into DSP J_index0.
+DSP Report: operator J_index0 is absorbed into DSP J_index0.
+DSP Report: operator J_index1 is absorbed into DSP J_index0.
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port cur_frame
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port bram0_dinb[15]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port bram0_dinb[14]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port bram0_dinb[13]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port bram1_dinb[15]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port bram1_dinb[14]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port bram1_dinb[13]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port bram2_dinb[15]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port bram2_dinb[14]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port bram2_dinb[13]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port bram3_dinb[15]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port bram3_dinb[14]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port bram3_dinb[13]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port bram4_dinb[15]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port bram4_dinb[14]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port bram4_dinb[13]
+WARNING: [Synth 8-3331] design graphics_rendering has unconnected port M_AXI_BID[0]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdstrb_reg[0]' (FDSE) to 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdstrb_reg[1]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdstrb_reg[1]' (FDSE) to 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdstrb_reg[2]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdstrb_reg[2]' (FDSE) to 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdstrb_reg[3]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[0]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[16]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[1]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[17]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[2]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[18]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[3]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[19]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[4]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[20]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[5]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[21]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[6]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[22]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[7]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[23]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[8]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[24]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[9]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[25]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[10]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[26]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[11]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[27]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[12]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[13]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[13]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[14]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[14]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[15]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[15]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[28]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[28]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[29]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[30]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\graphics_rendering_v2_0_S00_AXI_inst/ddr_wdata_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\graphics_rendering_v2_0_S00_AXI_inst/ddr_awaddr_reg[0] )
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\graphics_rendering_v2_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/axi_rdata_reg[20]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/axi_rdata_reg[21]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/axi_rdata_reg[21]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/axi_rdata_reg[22]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/axi_rdata_reg[22]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/axi_rdata_reg[23]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/axi_rdata_reg[23]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/axi_rdata_reg[24]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/axi_rdata_reg[24]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/axi_rdata_reg[25]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/axi_rdata_reg[25]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/axi_rdata_reg[26]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/axi_rdata_reg[26]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/axi_rdata_reg[27]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/axi_rdata_reg[27]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/axi_rdata_reg[28]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/axi_rdata_reg[28]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/axi_rdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/axi_rdata_reg[29]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/axi_rdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/axi_rdata_reg[30]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\graphics_rendering_v2_0_S00_AXI_inst/axi_rdata_reg[31] )
+INFO: [Synth 8-3886] merging instance 'graphics_rendering_v2_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'graphics_rendering_v2_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\graphics_rendering_v2_0_S00_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\graphics_rendering_v2_0_S00_AXI_inst/ddr_awaddr_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 641.570 ; gain = 351.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++-------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name        | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|graphics_rendering | A2*(B:0x25)     | 24     | 6      | -      | -      | 30     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|graphics_rendering | A2*(B:0x21)     | 24     | 6      | -      | -      | 30     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|graphics_rendering | (D'+(A:0x1))*B2 | 1      | 16     | -      | 10     | 27     | 0    | 1    | -    | 1    | 0     | 0    | 0    | 
+|graphics_rendering | A2*(B:0x25)     | 24     | 6      | -      | -      | 30     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|graphics_rendering | A2*(B:0x21)     | 24     | 6      | -      | -      | 30     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|graphics_rendering | (D'+(A:0x1))*B2 | 1      | 16     | -      | 10     | 27     | 0    | 1    | -    | 1    | 0     | 0    | 0    | 
++-------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 641.570 ; gain = 351.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 641.582 ; gain = 351.660
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 641.582 ; gain = 351.660
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 641.582 ; gain = 351.660
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 641.582 ; gain = 351.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 641.582 ; gain = 351.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 641.582 ; gain = 351.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 641.582 ; gain = 351.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     2|
+|2     |CARRY4  |    35|
+|3     |DSP48E1 |     6|
+|4     |LUT1    |     9|
+|5     |LUT2    |    93|
+|6     |LUT3    |    52|
+|7     |LUT4    |   116|
+|8     |LUT5    |    47|
+|9     |LUT6    |   278|
+|10    |MUXF7   |     4|
+|11    |MUXF8   |     2|
+|12    |FDRE    |   376|
+|13    |FDSE    |    61|
+|14    |IBUF    |   110|
+|15    |OBUF    |   235|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------------------------------------+-------------------+------+
+|      |Instance                               |Module             |Cells |
++------+---------------------------------------+-------------------+------+
+|1     |top                                    |                   |  1426|
+|2     |  graphics_rendering_v2_0_S00_AXI_inst |graphics_rendering |  1078|
++------+---------------------------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 641.582 ; gain = 351.660
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 167 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 641.582 ; gain = 351.660
+Synthesis Optimization Complete : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 641.582 ; gain = 351.660
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 47 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 709.129 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+103 Infos, 110 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 709.129 ; gain = 431.082
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 709.129 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'c:/Users/Jazim/school/ECE532/project/Vivado/custom_ip/ip_repo/grahpics_rendering_2/edit_graphics_rendering_v2_0.runs/synth_1/graphics_rendering_v2_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file graphics_rendering_v2_0_utilization_synth.rpt -pb graphics_rendering_v2_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  1 21:39:25 2024...
